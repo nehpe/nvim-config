@@ -14,10 +14,16 @@ opt.splitright = true
 opt.splitbelow = true
 opt.confirm = true
 opt.termguicolors = true
+opt.list = true
+opt.listchars = {
+  tab = "> ",
+  trail = ".",
+  nbsp = "+",
+  leadmultispace = "|   ",
+}
 
 opt.tabstop = 4
 opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.expandtab = true
 opt.smartindent = true
-

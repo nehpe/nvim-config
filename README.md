@@ -6,7 +6,8 @@ A small Neovim configuration for Windows and macOS.
 
 - Fuzzy finding with MiniPick
 - Treesitter highlighting and indentation
-- Native LSP completion, diagnostics, references, and format-on-save
+- Native LSP completion, diagnostics, references, and format-on-save when
+  supported by the server
 - Automatic language-server installation with Mason
 - Git hunk signs and actions
 - Indentation detection

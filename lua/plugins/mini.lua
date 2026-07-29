@@ -23,7 +23,7 @@ return {
           action = "lua require('mini.pick').builtin.grep_live()",
           section = "Find",
         },
-        starter.sections.recent_files(5, true, false),
+        starter.sections.recent_files(5, false, true),
         starter.sections.builtin_actions(),
         {
           name = "Plugin manager",

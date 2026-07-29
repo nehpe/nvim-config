@@ -4,9 +4,39 @@ return {
   config = function()
     local pick = require("mini.pick")
     local extra = require("mini.extra")
+    local starter = require("mini.starter")
 
     pick.setup()
     vim.ui.select = pick.ui_select
+
+    starter.setup({
+      header = "NEOVIM",
+      footer = "",
+      items = {
+        {
+          name = "Find files",
+          action = "lua require('mini.pick').builtin.files()",
+          section = "Find",
+        },
+        {
+          name = "Search text",
+          action = "lua require('mini.pick').builtin.grep_live()",
+          section = "Find",
+        },
+        starter.sections.recent_files(5, true, false),
+        starter.sections.builtin_actions(),
+        {
+          name = "Plugin manager",
+          action = "Lazy",
+          section = "Actions",
+        },
+      },
+      content_hooks = {
+        starter.gen_hook.adding_bullet(),
+        starter.gen_hook.padding(3, 2),
+        starter.gen_hook.aligning("center", "center"),
+      },
+    })
 
     local map = vim.keymap.set
 

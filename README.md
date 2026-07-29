@@ -13,6 +13,7 @@ A small Neovim configuration for Windows and macOS.
 - Indentation detection
 - Automatic pairs
 - Floating terminal
+- Daily and topic notes with task carry-forward
 
 ## Requirements
 
@@ -78,6 +79,13 @@ The leader key is `Space`.
 | `<leader>cs` | Document symbols |
 | `<leader>cS` | Workspace symbols |
 | `<leader>cf` | Format the current buffer |
+| `<leader>nd` | Open or create today's note |
+| `<leader>nf` | Find notes |
+| `<leader>ns` | Search notes |
+| `<leader>nt` | Find topics |
+| `<leader>no` | Open or create a topic from the current line |
+| `<leader>nc` | Carry unfinished tasks forward |
+| `<leader>nx` | Cycle the current task state |
 | `]h` / `[h` | Next / previous Git hunk |
 | `<leader>gp` | Preview Git hunk |
 | `<leader>gs` | Stage Git hunk |

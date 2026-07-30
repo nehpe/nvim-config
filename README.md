@@ -14,6 +14,7 @@ A small Neovim configuration for Windows and macOS.
 - Automatic pairs
 - Floating terminal
 - Daily and topic notes with task carry-forward
+- Machine-local GUI font picker
 
 ## Requirements
 
@@ -86,6 +87,9 @@ The leader key is `Space`.
 | `<leader>no` | Open or create a topic from the current line |
 | `<leader>nc` | Carry unfinished tasks forward |
 | `<leader>nx` | Cycle the current task state |
+| `<leader>tf` | Pick a GUI font |
+| `<leader>tF` | Refresh the installed font cache |
+| `<C-=>` / `<C-->` | Increase / decrease GUI font size |
 | `]h` / `[h` | Next / previous Git hunk |
 | `<leader>gp` | Preview Git hunk |
 | `<leader>gs` | Stage Git hunk |

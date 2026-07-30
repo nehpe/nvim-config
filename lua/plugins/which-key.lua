@@ -12,7 +12,7 @@ return {
       { "<leader>f", group = "Find" },
       { "<leader>g", group = "Git" },
       { "<leader>n", group = "Notes" },
-      { "<leader>t", group = "Toggle" },
+      { "<leader>t", group = "Tools" },
     },
   },
 }

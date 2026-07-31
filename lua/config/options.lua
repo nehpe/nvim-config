@@ -14,6 +14,7 @@ opt.splitright = true
 opt.splitbelow = true
 opt.confirm = true
 opt.termguicolors = true
+opt.textwidth = 80
 opt.list = true
 opt.listchars = {
   tab = "> ",

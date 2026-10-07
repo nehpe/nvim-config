@@ -1,16 +1,8 @@
 return {
-  "folke/tokyonight.nvim",
+  "savq/melange-nvim",
   lazy = false,
   priority = 1000,
-  opts = {
-    style = "storm",
-    styles = {
-      comments = { italic = false },
-      keywords = { italic = false },
-    },
-  },
-  config = function(_, opts)
-    require("tokyonight").setup(opts)
-    vim.cmd.colorscheme("tokyonight-storm")
+  config = function()
+    vim.cmd.colorscheme("melange")
   end,
 }
